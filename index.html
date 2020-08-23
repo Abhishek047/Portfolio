@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+        <header>
+            <div class="menu menu-close">
+                <div class="icon" onclick="toggleNav()">
+                    <img src="/icon/menu.svg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo">
+                <H1>LOGO</H1>
+            </div>
+        </header>
+        <div class="bg"></div>
+        <div class="wrapper view" id="home">
+            <!-- Heading -->
+            
+            <div class="info">
+                <img src="/icon/Pic.jpg" alt="">
+                <div class="about">
+                    <h1>I AM A FREELANCE WEB DEVELOPER</h1>
+                    <p>
+                            Hi, I am Abhishek. I design my and code all my projects
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Cards -->
+            
+            <div class="card-container">
+                <a href="#" id="skill-card" onclick="changeSkill()">
+                <div class="card">
+                        <img src="/icon/coding.svg" alt="">
+                        <h3>Skills</h3>
+                </div>
+                </a>
+               <a href="#" id="recent-project-card" onclick="changeProject()">
+                <div class="card">
+                        <img src="/icon/briefing.svg" alt="">
+                        <h3>Recent Project</h3>
+                </div>        
+               </a>
+               <a href="contact.html" id="contact-card">
+                <div class="card">
+                        <img src="/icon/contact.svg" alt="">
+                        <h3>Contact Me</h3>
+                </div>
+               </a>
+            </div>
+        </div>
+        <div class="wrapper hidden" id="skill">
+            <div class="bg-skill">
+                <img src="/icon/undraw_ideas_s70l.svg" alt="">
+            </div>
+            <section>
+                <div class="details">
+                    <h1>
+                        Skills
+                    </h1>
+                    <p>
+                        I have Skill set in both the design and coding.<br>Making the customer happy is my Mantra.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="/icon/responsive.svg" alt="">
+                    </div>
+                    <div class="info">
+                        <h4>Coding</h4>
+                        <p>
+                            The languages in which I am proficient are:                        
+                        </p>
+                            <p class="list">
+                            JAVA, C++, JAVASCRIPT, CSS, BOOTSTRAP, PYTHON
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-alt">
+                        <div class="icon">
+                            <img src="/icon/technical-support.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <h4>Designing</h4>
+                            <p>
+                            The tools in which I am good at are:                        
+                            </p>
+                            <p class="list">
+                             FIGMA, ADOBE XD, ADOBE ILLUSTRATOR                
+                            </p>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <div class="hidden wrapper" id="recentProject">
+            <div class="heading">
+                <h3>Post</h3>
+            </div>
+            <div class="project">
+                <div class="picture">
+                        <img src="/icon/34825.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        <p>This is my personal blog. In here I write about anything ifell like. In this I have made a small Forum-App in which anyone can add to a given story. </p>
+                        <a href="">View Post</a>
+                    </div>
+            </div>
+        </div>
+        <footer>
+        <div class="foot-bg"></div>
+        <div class="wrapper">
+        </div>
+        </footer>
+</body>
+<script src="/main.js"></script>
+</html>

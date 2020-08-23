@@ -1,0 +1,195 @@
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container .picture {
+  width: 75%;
+  height: 230px;
+  margin: 20px auto;
+}
+
+.about-container .picture img {
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.about-container .content {
+  background-color: #FFBD39;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 65%;
+  margin: 20px auto;
+}
+
+.about-container .content p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  padding: 10px;
+}
+
+.about-container .links {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #AEC1ED;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about-container .links .sm-link {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-container .links .sm-link .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.about-container .links .sm-link .icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-container .links .sm-link .discription {
+  margin: 0 auto;
+}
+
+.about-container .links .sm-link .discription p {
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-container {
+    position: relative;
+        grid-template-areas: "picture cont" "links cont";
+  }
+  .about-container .picture {
+    width: 250px;
+    height: 250px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: picture;
+  }
+  .about-container .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: cont;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0px 20px;
+  }
+  .about-container .content p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding: 20px;
+  }
+  .about-container .links {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: links;
+    margin: 10px auto;
+    margin-left: -10px;
+    padding: 10px;
+  }
+  .about-container .links .sm-link {
+    margin: 15px 0;
+  }
+  .about-container .links .sm-link .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .about-container .links .sm-link .discription {
+    margin: 0 auto;
+  }
+  .about-container .links .sm-link .discription p {
+    font-weight: 500;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about-container {
+    position: relative;
+        grid-template-areas: "picture cont" "links cont";
+  }
+  .about-container .picture {
+    z-index: 1;
+    width: 350px;
+    height: 300px;
+  }
+  .about-container .content {
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+    height: 250px;
+    max-width: 100%;
+    margin: 20px;
+    margin-left: -40px;
+    opacity: .9;
+  }
+  .about-container .content p {
+    padding: 20px;
+    font-size: 1.6em;
+    line-height: 1.5em;
+  }
+  .about-container .content:before {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    opacity: .3;
+    background-image: url(/icon/undraw_profile_6l1l.svg);
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 190px;
+  }
+  .about-container .links {
+    position: absolute;
+    opacity: .9;
+    margin-top: 50px;
+    z-index: 3;
+    left: 32%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about-container {
+    margin-left: 15vw;
+  }
+  .about-container .picture {
+    width: 57vh;
+    height: 55vh;
+  }
+  .about-container .content {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

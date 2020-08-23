@@ -1,0 +1,93 @@
+.contact-me-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: #fffefe;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 8px rgba(#1e1e1e, .25);
+    }
+    form{
+        margin-top: 40px;
+        max-width: 500px;
+        background-color: rgba(#F088AB,1);
+        width: 80%;
+        border-radius: 40px;
+        padding: 10px 25px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 8px 8px 20px rgba(#1e1e1e, .25);
+        p{
+            font-size: 1.3em;
+            color:rgba(#821739,1);
+            padding:5px 0;
+        }
+        #question{
+            margin:5px 0;
+            border-radius: 5px;
+            padding: 5px;
+            border: 0px;
+            resize: none;
+            height: 50px;
+        }
+        input{
+            margin:5px 0;
+            border-radius: 5px;
+            padding: 5px;
+            border: 0px;
+        }
+        #btn{
+            color: #fffefe;
+            background-color: rgba(#821739,1);
+            margin-top:20px;
+            border-radius: 50px;
+            padding: 10px;
+            font-size: 1.2em;
+            box-shadow: 6px 6px 8px rgba(#1e1e1e, .25);
+        }
+    }
+}
+
+//TABLET VERSION
+
+@media only screen and (min-width: 600px){
+        .contact-bg{
+            position: absolute;
+            right:50px;
+            bottom:100px;
+            background-image: url(/icon/undraw_contact_us_15o2.svg);
+            width: 350px;
+            height:250px;
+            background-size: cover;
+            background-position: center;
+            opacity:.5;
+            z-index: -1;
+        }
+}
+@media only screen and (min-width: 900px){
+.contact-me-form{
+    h1{
+        font-size: 2.5em;
+    }
+    form{
+        max-width: 40vw;
+        min-height: 400px;
+        align-self: flex-start;
+        margin-left: 70px;
+        p{
+            &:first-child{
+                margin-top: 30px;
+            }
+        }
+        
+    }
+    .contact-bg{
+        right:50px;
+        bottom:150px;
+        width: 500px;
+        height:400px;
+        }
+}
+}
